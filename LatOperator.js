@@ -121,11 +121,9 @@ function jadwalFestival(hari, cuaca, suhu, angin) {
         if (angin < 20) {
             daftarAcara += ", Acara Dalam Ruangan"
         }
-    } else {
-        daftarAcara += ", Acara Luar Ruangan"
     }
 
-    if (cuacaLower !== "hujan" && suhu > 5) {
+    if (cuacaLower !== "hujan" && suhu > 5 && angin < 20) {
         daftarAcara += ", Konser Malam"
     }
 
